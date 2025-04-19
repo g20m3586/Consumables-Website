@@ -1,0 +1,35 @@
+/* Custom styles to complement Tailwind */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Add some subtle animations */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Custom focus styles */
+button:focus, input:focus, textarea:focus {
+    outline: none;
+    ring: 2px;
+    ring-blue-500;
+    ring-opacity-50;
+}
+
+/* Product card hover effect */
+.product-card:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
