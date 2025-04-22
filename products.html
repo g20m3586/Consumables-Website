@@ -6,7 +6,6 @@
     <title>Our Products | NQAGWANA CONSUMABLES</title>
     <meta name="description" content="Explore our high-quality consumables for your business needs">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         .text-custom { color: #C72C41; }
@@ -212,11 +211,11 @@
                 </div>
             </div>
             
-            <div class="text-center">
+            <!-- <div class="text-center">
                 <button class="bg-custom text-white px-6 py-3 rounded-md hover:bg-custom transition">
                     Request Custom Solution
                 </button>
-            </div>
+            </div> -->
         </section>
     </main>
 
@@ -278,32 +277,73 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
     <script>
-        // Mobile menu toggle
-        document.getElementById('menu-btn').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-
-        // Close mobile menu when clicking a link
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', function() {
-                document.getElementById('mobile-menu').classList.add('hidden');
-            });
-        });
-
-        // Toggle more office supplies
-        document.getElementById('toggle-office-supplies').addEventListener('click', function() {
-            const moreProducts = document.getElementById('more-office-supplies');
-            const button = this;
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
             
-            moreProducts.classList.toggle('hidden-products');
-            
-            if (moreProducts.classList.contains('hidden-products')) {
-                button.textContent = 'View All Office Supplies';
-            } else {
-                button.textContent = 'Show Less';
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
             }
+
+            // Close mobile menu when clicking a link
+            const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Toggle more office supplies
+            const toggleBtn = document.getElementById('toggle-office-supplies');
+            const moreProducts = document.getElementById('more-office-supplies');
+            
+            if (toggleBtn && moreProducts) {
+                toggleBtn.addEventListener('click', function() {
+                    moreProducts.classList.toggle('hidden-products');
+                    
+                    if (moreProducts.classList.contains('hidden-products')) {
+                        this.textContent = 'View All Office Supplies';
+                    } else {
+                        this.textContent = 'Show Less';
+                    }
+                });
+            }
+
+            // Add hover effects to solution cards
+            const solutionCards = document.querySelectorAll('.solution-card');
+            solutionCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                    this.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.1)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = '';
+                    this.style.boxShadow = '';
+                });
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
         });
     </script>
 </body>
