@@ -29,7 +29,7 @@
         }
     </style>
 </head>
-<body class="font-sans bg-gray-50 text-gray-800">
+<body class="font-sans bg-gray-50 text-gray-800 fade-in">
     <!-- Navigation -->
     <nav class="bg-white shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -223,12 +223,15 @@
     <section class="bg-custom text-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl font-bold mb-6">Need Bulk Quantities?</h2>
-            <p class="text-xl mb-8 max-w-3xl mx-auto">We offer special pricing for large orders and recurring supply contracts.</p>
-            <button class="bg-white text-custom px-8 py-3 rounded-md font-bold hover:bg-gray-100 transition">
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                We offer special pricing for large orders and recurring supply contracts.
+            </p>
+            <a href="index.html#contact" class="inline-block bg-white text-custom px-8 py-3 rounded-md font-bold hover:bg-gray-100 transition">
                 Contact Our Bulk Sales Team
-            </button>
+            </a>
         </div>
     </section>
+    
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
@@ -345,6 +348,29 @@
                 });
             });
         });
+        // Back to Top button functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTopBtn = document.getElementById('backToTopBtn');
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+            backToTopBtn.classList.remove('hidden');
+        } else {
+            backToTopBtn.classList.add('hidden');
+        }
+    });
+
+    backToTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
+
     </script>
+    <button id="backToTopBtn" title="Go to top" class="hidden fixed bottom-6 right-6 bg-custom text-white p-3 rounded-full shadow-lg hover:bg-red-700 transition">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 </body>
 </html>

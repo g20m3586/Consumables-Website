@@ -18,7 +18,7 @@
         .focus\:ring-custom:focus { --tw-ring-color: #C72C41; }
     </style>
 </head>
-<body class="font-sans bg-gray-50 text-gray-800">
+<body class="font-sans bg-gray-50 text-gray-800 fade-in">
     <!-- Navigation -->
     <nav class="bg-white shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -34,7 +34,7 @@
                     <a href="#solutions" class="text-gray-600 hover:text-custom transition">Solutions</a>
                     <a href="#about" class="text-gray-600 hover:text-custom transition">About</a>
                     <a href="#contact" class="text-gray-600 hover:text-custom transition">Contact</a>
-                    <button class="bg-custom text-white px-4 py-2 rounded-md hover:bg-custom transition">
+                    <button onclick="location.href='#solutions'" class="bg-custom text-white px-4 py-2 rounded-md hover:bg-custom transition">
                         Get Quote
                     </button>
                 </div>
@@ -65,10 +65,10 @@
                     <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Premium Consumables for Your Business</h1>
                     <p class="text-xl text-gray-600 mb-8">High-quality, sustainable consumables that keep your operations running smoothly.</p>
                     <div class="flex space-x-4">
-                        <button class="bg-custom text-white px-6 py-3 rounded-md hover:bg-custom transition">
+                        <button onclick="location.href='#products'" class="bg-custom text-white px-6 py-3 rounded-md hover:bg-custom transition">
                             Explore Products
                         </button>
-                        <button class="border border-custom text-custom px-6 py-3 rounded-md hover:bg-gray-50 transition">
+                        <button  onclick="location.href='#contact'" class="border border-custom text-custom px-6 py-3 rounded-md hover:bg-gray-50 transition">
                             Contact Sales
                         </button>
                     </div>
@@ -168,41 +168,59 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">About Nqagwana Consumables</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Delivering quality since 2013.</p>
+<!-- About Section -->
+<section id="about" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">About NQAGWANA CONSUMABLES</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Empowering businesses with premium consumables and outstanding service since 2013.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
+                <div class="bg-gray-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-leaf text-custom text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Sustainability</h3>
+                <p class="text-gray-600">
+                    We are committed to providing eco-friendly products and reducing our carbon footprint, because we believe in protecting our future.
+                </p>
             </div>
-            
-            <div class="grid md:grid-cols-3 gap-8 text-center">
-                <div class="bg-white p-8 rounded-lg shadow-sm">
-                    <div class="bg-gray-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-leaf text-custom text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Sustainability</h3>
-                    <p class="text-gray-600">We prioritize eco-friendly products and responsible sourcing.</p>
+
+            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
+                <div class="bg-gray-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-award text-custom text-2xl"></i>
                 </div>
-                
-                <div class="bg-white p-8 rounded-lg shadow-sm">
-                    <div class="bg-gray-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-award text-custom text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Quality</h3>
-                    <p class="text-gray-600">Rigorous quality control ensures you receive only the best products.</p>
+                <h3 class="text-xl font-semibold mb-3">Quality Products</h3>
+                <p class="text-gray-600">
+                    Our team sources only the best materials, ensuring that every delivery meets the highest standards of reliability and performance.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
+                <div class="bg-gray-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-headset text-custom text-2xl"></i>
                 </div>
-                
-                <div class="bg-white p-8 rounded-lg shadow-sm">
-                    <div class="bg-gray-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-headset text-custom text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Support</h3>
-                    <p class="text-gray-600">Dedicated account managers for personalized service.</p>
-                </div>
+                <h3 class="text-xl font-semibold mb-3">Customer Focus</h3>
+                <p class="text-gray-600">
+                    Every client is a partner. Our dedicated support team works closely with you to tailor solutions that fit your specific business needs.
+                </p>
             </div>
         </div>
-    </section>
+
+        <div class="mt-16 text-center max-w-3xl mx-auto">
+            <p class="text-lg text-gray-600 mb-6">
+                From offices to enterprises, NQAGWANA CONSUMABLES has proudly served a diverse range of industries including government, education, finance, and healthcare.
+            </p>
+            <p class="text-lg text-gray-600">
+                Our mission is simple: deliver exceptional consumable solutions that drive your business forward.
+            </p>
+        </div>
+    </div>
+</section>
+
 
     <!-- Contact Section -->
     <section id="contact" class="py-16 bg-white">
@@ -265,44 +283,60 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">ConsumablesPro</h3>
-                    <p class="text-gray-400">Premium consumables for modern businesses.</p>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Products</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Office Supplies</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Cleaning Products</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Custom Solutions</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Company</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Sustainability</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Careers</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Connect</h3>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
+    <!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-lg font-semibold mb-4">NQAGWANA CONSUMABLES</h3>
+                <p class="text-gray-400">Premium consumables for modern businesses.</p>
             </div>
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-                <p>&copy; 2023 ConsumablesPro. All rights reserved.</p>
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Products</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Office Supplies</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Cleaning Products</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Custom Solutions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Company</h3>
+                <ul class="space-y-2">
+                    <li><a href="#about" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                    <li><a href="#solutions" class="text-gray-400 hover:text-white transition">Our Solutions</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Careers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Connect</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="mt-4">
+                    <a href="#contact" class="text-gray-400 hover:text-white transition block mb-2">
+                        <i class="fas fa-envelope mr-2"></i>nconsumables@gmail.com
+                    </a>
+                    <a href="#contact" class="text-gray-400 hover:text-white transition block">
+                        <i class="fas fa-phone-alt mr-2"></i>+27 79 763 5065
+                    </a>
+                </div>
             </div>
         </div>
-    </footer>
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+            <p>&copy; 2023 NQAGWANA CONSUMABLES. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
 
-    <script src="script.js"></script>
+
+<script src="script.js"></script>
+
+<!-- Back to Top Button -->
+<button id="backToTopBtn" title="Go to top" class="hidden fixed bottom-6 right-6 bg-custom text-white p-3 rounded-full shadow-lg hover:bg-red-700 transition">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
 </body>
 </html>

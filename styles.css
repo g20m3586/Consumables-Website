@@ -33,3 +33,16 @@ button:focus, input:focus, textarea:focus {
     transform: translateY(-5px);
     transition: all 0.3s ease;
 }
+
+/* Footer link hover smooth transition */
+footer a {
+    transition: color 0.3s ease;
+}
+
+button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
