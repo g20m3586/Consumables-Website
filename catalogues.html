@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalogue | NQAGWANA CONSUMABLES</title>
+    <meta name="description" content="Browse our complete product catalogue">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        .text-custom { color: #C72C41; }
+        .hover\:text-custom:hover { color: #C72C41; }
+        .bg-custom { background-color: #C72C41; }
+        .hover\:bg-custom:hover { background-color: #A52234; }
+        .border-custom { border-color: #C72C41; }
+        .hover\:border-custom:hover { border-color: #C72C41; }
+        .focus\:ring-custom:focus { --tw-ring-color: #C72C41; }
+        .catalogue-hero {
+            background-image: url('images/catalogue-banner.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .product-card {
+            transition: all 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800 fade-in">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img class="h-8 w-auto" src="images/logo-with-abstract-colorful-shape.png" alt="Nqagwana Consumables">
+                        <span class="ml-2 text-xl font-semibold text-gray-800">NQAGWANA CONSUMABLES</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-custom transition">Home</a>
+                    <a href="products.html" class="text-gray-600 hover:text-custom transition">Products</a>
+                    <a href="catalogues.html" class="text-custom font-medium">Catalogue</a>
+                    <a href="index.html#about" class="text-gray-600 hover:text-custom transition">About</a>
+                    <a href="index.html#contact" class="text-gray-600 hover:text-custom transition">Contact</a>
+                    <button class="bg-custom text-white px-4 py-2 rounded-md hover:bg-custom transition">
+                        Get Quote
+                    </button>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-600 hover:text-custom">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white pb-4 px-4 shadow-md">
+            <a href="index.html" class="block py-2 text-gray-600 hover:text-custom">Home</a>
+            <a href="products.html" class="block py-2 text-gray-600 hover:text-custom">Products</a>
+            <a href="catalogues.html" class="block py-2 text-custom font-medium">Catalogue</a>
+            <a href="index.html#about" class="block py-2 text-gray-600 hover:text-custom">About</a>
+            <a href="index.html#contact" class="block py-2 text-gray-600 hover:text-custom">Contact</a>
+            <button class="mt-2 w-full bg-custom text-white px-4 py-2 rounded-md hover:bg-custom">
+                Get Quote
+            </button>
+        </div>
+    </nav>
+
+    <!-- Catalogue Hero Section -->
+    <header class="catalogue-hero text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center bg-black bg-opacity-50">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Our Complete Product Catalogue</h1>
+            <p class="text-xl max-w-3xl mx-auto">Browse our full range of high-quality office consumables and equipment</p>
+        </div>
+    </header>
+
+    <!-- Main Catalogue Section -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <!-- Category Filter -->
+        <div class="mb-12">
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="px-4 py-2 bg-custom text-white rounded-md">All Products</button>
+                <button class="px-4 py-2 bg-white border border-gray-300 rounded-md hover:bg-gray-50">Office Supplies</button>
+                <button class="px-4 py-2 bg-white border border-gray-300 rounded-md hover:bg-gray-50">Office Equipment</button>
+                <button class="px-4 py-2 bg-white border border-gray-300 rounded-md hover:bg-gray-50">Toner Cartridges</button>
+                <button class="px-4 py-2 bg-white border border-gray-300 rounded-md hover:bg-gray-50">Tinned Foods</button>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Product 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden product-card">
+                <img src="images/toner-cartridge-1.jpg" alt="Toner Cartridge" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">HP 85A Black Toner</h3>
+                    <p class="text-gray-600 mb-4">Compatible with HP LaserJet Pro printers</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-custom">R 499.99</span>
+                        <button class="px-3 py-1 bg-custom text-white rounded-md text-sm hover:bg-red-700">Add to Quote</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden product-card">
+                <img src="images/typek-paper.jpg" alt="Typek Paper" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Typek A4 Paper (Ream)</h3>
+                    <p class="text-gray-600 mb-4">Premium 80gsm white printing paper</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-custom">R 89.99</span>
+                        <button class="px-3 py-1 bg-custom text-white rounded-md text-sm hover:bg-red-700">Add to Quote</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden product-card">
+                <img src="images/lucky-star-tins.jpg" alt="Lucky Star Tinned Food" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Lucky Star Pilchards</h3>
+                    <p class="text-gray-600 mb-4">400g tinned pilchards in tomato sauce</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-custom">R 24.99</span>
+                        <button class="px-3 py-1 bg-custom text-white rounded-md text-sm hover:bg-red-700">Add to Quote</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden product-card">
+                <img src="images/tippex.jpg" alt="Tippex Correction Fluid" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Tippex Correction Fluid</h3>
+                    <p class="text-gray-600 mb-4">20ml quick-dry correction fluid with brush</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-custom">R 19.99</span>
+                        <button class="px-3 py-1 bg-custom text-white rounded-md text-sm hover:bg-red-700">Add to Quote</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden product-card">
+                <img src="images/notebooks.jpg" alt="Notebooks" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">A5 Notebooks (Pack of 5)</h3>
+                    <p class="text-gray-600 mb-4">80-page lined notebooks for office use</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-custom">R 129.99</span>
+                        <button class="px-3 py-1 bg-custom text-white rounded-md text-sm hover:bg-red-700">Add to Quote</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden product-card">
+                <img src="images/desktop-printer.jpg" alt="Desktop Printer" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">HP LaserJet Pro MFP</h3>
+                    <p class="text-gray-600 mb-4">All-in-one printer, scanner, copier</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-custom">R 3,499.99</span>
+                        <button class="px-3 py-1 bg-custom text-white rounded-md text-sm hover:bg-red-700">Add to Quote</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden product-card">
+                <img src="images/ballpoint-pens.jpg" alt="Ballpoint Pens" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Ballpoint Pens (Box of 50)</h3>
+                    <p class="text-gray-600 mb-4">Black ink, medium point</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-custom">R 149.99</span>
+                        <button class="px-3 py-1 bg-custom text-white rounded-md text-sm hover:bg-red-700">Add to Quote</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden product-card">
+                <img src="images/staple-gun.jpg" alt="Staple Gun" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Heavy-duty Staple Gun</h3>
+                    <p class="text-gray-600 mb-4">Includes 1000 staples</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-custom">R 199.99</span>
+                        <button class="px-3 py-1 bg-custom text-white rounded-md text-sm hover:bg-red-700">Add to Quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="mt-12 flex justify-center">
+            <nav class="inline-flex rounded-md shadow">
+                <a href="#" class="px-3 py-2 rounded-l-md border border-gray-300 bg-white text-gray-500 hover:bg-gray-50">Previous</a>
+                <a href="#" class="px-3 py-2 border-t border-b border-gray-300 bg-white text-custom font-medium">1</a>
+                <a href="#" class="px-3 py-2 border border-gray-300 bg-white text-gray-500 hover:bg-gray-50">2</a>
+                <a href="#" class="px-3 py-2 border border-gray-300 bg-white text-gray-500 hover:bg-gray-50">3</a>
+                <a href="#" class="px-3 py-2 rounded-r-md border border-gray-300 bg-white text-gray-500 hover:bg-gray-50">Next</a>
+            </nav>
+        </div>
+    </main>
+
+    <!-- Bulk Order CTA -->
+    <section class="bg-custom text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">Need Bulk Quantities?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                We offer special pricing for large orders and recurring supply contracts.
+            </p>
+            <a href="index.html#contact" class="inline-block bg-white text-custom px-8 py-3 rounded-md font-bold hover:bg-gray-100 transition">
+                Contact Our Bulk Sales Team
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">NQAGWANA CONSUMABLES</h3>
+                    <p class="text-gray-400">Premium consumables for modern businesses.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="products.html" class="text-gray-400 hover:text-white transition">Office Supplies</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-white transition">Office Equipment</a></li>
+                        <li><a href="catalogues.html" class="text-gray-400 hover:text-white transition">Full Catalogue</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#about" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="index.html#solutions" class="text-gray-400 hover:text-white transition">Our Solutions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div class="mt-4">
+                        <a href="index.html#contact" class="text-gray-400 hover:text-white transition block mb-2">
+                            <i class="fas fa-envelope mr-2"></i>nconsumables@gmail.com
+                        </a>
+                        <a href="index.html#contact" class="text-gray-400 hover:text-white transition block">
+                            <i class="fas fa-phone-alt mr-2"></i>+27 79 763 5065
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 NQAGWANA CONSUMABLES. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <button id="backToTopBtn" title="Go to top" class="hidden fixed bottom-6 right-6 bg-custom text-white p-3 rounded-full shadow-lg hover:bg-red-700 transition">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+</body>
+</html>
