@@ -46,3 +46,19 @@ button {
 button:hover {
     transform: translateY(-2px);
 }
+/* Form message styles */
+.form-message {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.375rem;
+}
+
+.form-success {
+    color: #065f46;
+    background-color: #d1fae5;
+}
+
+.form-error {
+    color: #991b1b;
+    background-color: #fee2e2;
+}
