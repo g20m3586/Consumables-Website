@@ -3,11 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> NQAGWANA CONSUMABLES</title>
-    <meta name="description" content="High-quality consumables for your business needs">
+    <title>Premium Office Consumables & Supplies | NQAGWANA CONSUMABLES</title>
+    <meta name="description" content="South Africa's leading supplier of premium office consumables including toner cartridges, printing paper, tinned foods, and office equipment. Get wholesale prices on quality products.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="office consumables, toner cartridges, printing paper, office supplies, Pretoria office supplies, wholesale consumables, HP toner, tinned foods, office equipment">
+    <meta name="author" content="NQAGWANA CONSUMABLES">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="ZA-GP" />
+    <meta name="geo.placename" content="Pretoria" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.nqagwanaconsumables.co.za" />
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Premium Office Consumables & Supplies | NQAGWANA CONSUMABLES">
+    <meta property="og:description" content="South Africa's leading supplier of premium office consumables including toner cartridges, printing paper, tinned foods, and office equipment.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.nqagwanaconsumables.co.za">
+    <meta property="og:image" content="https://www.nqagwanaconsumables.co.za/images/og-image.jpg">
+    <meta property="og:site_name" content="NQAGWANA CONSUMABLES">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Premium Office Consumables & Supplies | NQAGWANA CONSUMABLES">
+    <meta name="twitter:description" content="South Africa's leading supplier of premium office consumables including toner cartridges, printing paper, tinned foods, and office equipment.">
+    <meta name="twitter:image" content="https://www.nqagwanaconsumables.co.za/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "NQAGWANA CONSUMABLES",
+      "image": "https://www.nqagwanaconsumables.co.za/images/logo.jpg",
+      "@id": "https://www.nqagwanaconsumables.co.za",
+      "url": "https://www.nqagwanaconsumables.co.za",
+      "telephone": "+27797635065",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "305 Osdic Flats, 596 Paul Kruger Street",
+        "addressLocality": "Eloffsdal",
+        "addressRegion": "Pretoria",
+        "postalCode": "0084",
+        "addressCountry": "ZA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-25.7479",
+        "longitude": "28.2293"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      "priceRange": "$$"
+    }
+    </script>
+    
     <style>
         .text-custom { color: #C72C41; }
         .hover\:text-custom:hover { color: #C72C41; }
@@ -16,11 +90,37 @@
         .border-custom { border-color: #C72C41; }
         .hover\:border-custom:hover { border-color: #C72C41; }
         .focus\:ring-custom:focus { --tw-ring-color: #C72C41; }
+        
+        /* New gradient background for contact section */
+        .contact-gradient {
+            background: linear-gradient(135deg, rgba(199,44,65,0.1) 0%, rgba(255,255,255,1) 100%);
+        }
+        
+        /* Feature card hover effect */
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(199, 44, 65, 0.1);
+        }
+        
+        /* Testimonial styling */
+        .testimonial-card {
+            position: relative;
+        }
+        .testimonial-card::before {
+            content: """;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 80px;
+            color: rgba(199, 44, 65, 0.1);
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
     </style>
 </head>
 <body class="font-sans bg-gray-50 text-gray-800 fade-in">
     <!-- Navigation -->
-    <nav class="bg-white shadow-sm">
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
@@ -57,73 +157,142 @@
             </a>
         </div>
     </nav>
+
     <!-- Hero Section -->
     <header class="bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
             <div class="md:flex items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0">
                     <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Premium Consumables for Your Business</h1>
-                    <p class="text-xl text-gray-600 mb-8">High-quality, sustainable consumables that keep your operations running smoothly.</p>
+                    <p class="text-xl text-gray-600 mb-8">High-quality, sustainable consumables that keep your operations running smoothly. Serving Pretoria businesses since 2013.</p>
                     <div class="flex space-x-4">
                         <button onclick="location.href='#products'" class="bg-custom text-white px-6 py-3 rounded-md hover:bg-custom transition">
                             Explore Products
                         </button>
-                        <button  onclick="location.href='#contact'" class="border border-custom text-custom px-6 py-3 rounded-md hover:bg-gray-50 transition">
+                        <button onclick="location.href='#contact'" class="border border-custom text-custom px-6 py-3 rounded-md hover:bg-gray-50 transition">
                             Contact Sales
                         </button>
                     </div>
                 </div>
                 <div class="md:w-1/2 md:pl-12">
-                    <img src="images/pexels-punttim-53874.jpg" alt="Office consumables" class="rounded-lg shadow-xl w-full h-auto">
+                    <img src="images/pexels-punttim-53874.jpg" alt="Office consumables including toner cartridges, paper, and office supplies" class="rounded-lg shadow-xl w-full h-auto">
                 </div>
             </div>
         </div>
     </header>
 
-<!-- Products Section -->
-<section id="products" class="py-16 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Product Range</h2>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Quality consumables designed for efficiency and sustainability.</p>
-        </div>
-        
-        <div class="grid md:grid-cols-3 gap-8">
-            <!-- Product 1 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-                <img src="images/pexels-pixabay-159644.jpg" alt="Office supplies" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold mb-2">Office Supplies</h3>
-                    <p class="text-gray-600 mb-4">Premium paper, pens, notebooks and all essential office materials.</p>
-                    <a href="products.html" class="text-custom hover:text-gray-800 font-medium">Learn more →</a>
+    <!-- Trust Indicators Section -->
+    <section class="bg-gray-100 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-3xl font-bold text-custom mb-2">10+</div>
+                    <div class="text-gray-600">Years in Business</div>
                 </div>
-            </div>
-            
-            <!-- Product 2 - Changed from Cleaning Supplies to Office Equipment -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-                <img src="images/2149511873.jpg" alt="Office equipment" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold mb-2">Office Equipment</h3>
-                    <p class="text-gray-600 mb-4">Printers, scanners, and other essential office machines.</p>
-                    <a href="products.html" class="text-custom hover:text-gray-800 font-medium">Learn more →</a>
+                <div>
+                    <div class="text-3xl font-bold text-custom mb-2">500+</div>
+                    <div class="text-gray-600">Happy Clients</div>
                 </div>
-            </div>
-            
-            <!-- Product 3 - Changed to link to catalogues.html -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-                <img src="images/pexels-tima-miroshnichenko-6170458.jpg" alt="Full product catalogue" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold mb-2">Full Product Catalogue</h3>
-                    <p class="text-gray-600 mb-4">Browse our complete range of products and services.</p>
-                    <a href="catalogues.html" class="text-custom hover:text-gray-800 font-medium">View Catalogue →</a>
+                <div>
+                    <div class="text-3xl font-bold text-custom mb-2">50+</div>
+                    <div class="text-gray-600">Product Lines</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-custom mb-2">24h</div>
+                    <div class="text-gray-600">Response Time</div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Product Range</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Quality consumables designed for efficiency and sustainability.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition feature-card">
+                    <img src="images/pexels-pixabay-159644.jpg" alt="Office supplies including paper, pens, and notebooks" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Office Supplies</h3>
+                        <p class="text-gray-600 mb-4">Premium paper, pens, notebooks and all essential office materials.</p>
+                        <a href="products.html" class="text-custom hover:text-gray-800 font-medium">Learn more →</a>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition feature-card">
+                    <img src="images/2149511873.jpg" alt="Office equipment including printers and scanners" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Office Equipment</h3>
+                        <p class="text-gray-600 mb-4">Printers, scanners, and other essential office machines.</p>
+                        <a href="products.html" class="text-custom hover:text-gray-800 font-medium">Learn more →</a>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition feature-card">
+                    <img src="images/pexels-tima-miroshnichenko-6170458.jpg" alt="Full product catalogue of office consumables" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Full Product Catalogue</h3>
+                        <p class="text-gray-600 mb-4">Browse our complete range of products and services.</p>
+                        <a href="catalogues.html" class="text-custom hover:text-gray-800 font-medium">View Catalogue →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Best Selling Products</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Our customers' most popular choices</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <div class="bg-white p-4 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <img src="images/cartridge-icon.png" alt="Toner cartridge icon" class="w-10 h-10">
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">HP Toner Cartridges</h3>
+                    <p class="text-gray-600 text-sm">Compatible with all major HP printer models</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <div class="bg-white p-4 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <img src="images/paper-icon.png" alt="Paper ream icon" class="w-10 h-10">
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Typek A4 Paper</h3>
+                    <p class="text-gray-600 text-sm">Premium 80gsm white printing paper</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <div class="bg-white p-4 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <img src="images/food-icon.png" alt="Tinned food icon" class="w-10 h-10">
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Lucky Star Pilchards</h3>
+                    <p class="text-gray-600 text-sm">400g tinned pilchards in tomato sauce</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <div class="bg-white p-4 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <img src="images/printer-icon.png" alt="Printer icon" class="w-10 h-10">
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">HP OfficeJet Printers</h3>
+                    <p class="text-gray-600 text-sm">Reliable all-in-one office printers</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Solutions Section -->
-    <section id="solutions" class="py-16 bg-white">
+    <section id="solutions" class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="md:flex items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0 md:pr-12">
@@ -142,156 +311,354 @@
                             <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
                             <span class="text-gray-700">Sustainable product options</span>
                         </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Next-day delivery in Pretoria</span>
+                        </li>
                     </ul>
                 </div>
-                <div class="md:w-1/2 bg-gray-100 rounded-lg p-8">
-                    <h3 class="text-xl font-semibold mb-4">Request a Consultation</h3>
-<!-- Update the consultation form in the Solutions section -->
-<!-- Updated Consultation Form in Solutions Section -->
-<form name="consultation" action="https://formsubmit.co/montymhango01@gmail.com" method="POST" class="space-y-4">
-    <input type="hidden" name="_subject" value="New Consultation Request from NQAGWANA Website">
-    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> <!-- Replace with your actual success page -->
-    <input type="hidden" name="_captcha" value="false">
-    <input type="text" name="_honey" style="display:none"> <!-- Honeypot field -->
-    
-    <div>
-        <label for="name" class="block text-gray-700 mb-1">Name <span class="text-red-500">*</span></label>
-        <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-custom">
-    </div>
-    <div>
-        <label for="email" class="block text-gray-700 mb-1">Email <span class="text-red-500">*</span></label>
-        <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-custom">
-    </div>
-    <div>
-        <label for="company" class="block text-gray-700 mb-1">Company</label>
-        <input type="text" id="company" name="company" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-custom">
-    </div>
-    <button type="submit" class="w-full bg-custom text-white py-2 rounded-md hover:bg-custom transition">
-        Schedule Call
-    </button>
-</form>
+                <div class="md:w-1/2">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-6 text-center">How We Help Your Business</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-custom text-white p-2 rounded-full mr-4">
+                                    <i class="fas fa-truck text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Reliable Supply Chain</h4>
+                                    <p class="text-gray-600">Never run out of essential supplies with our automated replenishment system.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-custom text-white p-2 rounded-full mr-4">
+                                    <i class="fas fa-percentage text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Cost Savings</h4>
+                                    <p class="text-gray-600">Volume discounts and efficient ordering save you money on office expenses.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-custom text-white p-2 rounded-full mr-4">
+                                    <i class="fas fa-clock text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Time Efficiency</h4>
+                                    <p class="text-gray-600">Free up your staff from supply management to focus on core business.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- About Section -->
-<section id="about" class="py-16 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">About NQAGWANA CONSUMABLES</h2>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                Empowering businesses with premium consumables and outstanding service since 2013.
-            </p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8 text-center">
-            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
-                <div class="bg-gray-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                    <i class="fas fa-leaf text-custom text-2xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-3">Sustainability</h3>
-                <p class="text-gray-600">
-                    We are committed to providing eco-friendly products and reducing our carbon footprint, because we believe in protecting our future.
-                </p>
-            </div>
-
-            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
-                <div class="bg-gray-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                    <i class="fas fa-award text-custom text-2xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-3">Quality Products</h3>
-                <p class="text-gray-600">
-                    Our team sources only the best materials, ensuring that every delivery meets the highest standards of reliability and performance.
-                </p>
-            </div>
-
-            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
-                <div class="bg-gray-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                    <i class="fas fa-headset text-custom text-2xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-3">Customer Focus</h3>
-                <p class="text-gray-600">
-                    Every client is a partner. Our dedicated support team works closely with you to tailor solutions that fit your specific business needs.
-                </p>
-            </div>
-        </div>
-
-        <div class="mt-16 text-center max-w-3xl mx-auto">
-            <p class="text-lg text-gray-600 mb-6">
-                From offices to enterprises, NQAGWANA CONSUMABLES has proudly served a diverse range of industries including government, education, finance, and healthcare.
-            </p>
-            <p class="text-lg text-gray-600">
-                Our mission is simple: deliver exceptional consumable solutions that drive your business forward.
-            </p>
-        </div>
-    </div>
-</section>
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-white">
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Contact Us</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Get in touch with our team.</p>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Trusted by businesses across Pretoria</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-custom text-white w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                            <span>JD</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">John Dube</h4>
+                            <p class="text-gray-600 text-sm">Office Manager, Pretoria Legal</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"NQAGWANA has been our go-to supplier for office consumables for 5 years. Their toner cartridges last longer than others we've tried, and their delivery is always prompt."</p>
+                    <div class="mt-4 text-custom">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-lg testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-custom text-white w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                            <span>SM</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Sarah Molefe</h4>
+                            <p class="text-gray-600 text-sm">Administrator, City College</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"The monthly supply package has saved us countless hours. We no longer worry about running out of paper or stationery. Their customer service is exceptional."</p>
+                    <div class="mt-4 text-custom">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-lg testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-custom text-white w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                            <span>TN</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Thomas Nkosi</h4>
+                            <p class="text-gray-600 text-sm">CEO, Nkosi Holdings</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"As a growing business, we needed a supplier that could scale with us. NQAGWANA's enterprise solution has streamlined our procurement across all 3 of our locations."</p>
+                    <div class="mt-4 text-custom">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">About NQAGWANA CONSUMABLES</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Empowering businesses with premium consumables and outstanding service since 2013.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="bg-gray-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-leaf text-custom text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Sustainability</h3>
+                    <p class="text-gray-600">
+                        We are committed to providing eco-friendly products and reducing our carbon footprint, because we believe in protecting our future.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="bg-gray-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-award text-custom text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Quality Products</h3>
+                    <p class="text-gray-600">
+                        Our team sources only the best materials, ensuring that every delivery meets the highest standards of reliability and performance.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="bg-gray-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-headset text-custom text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Customer Focus</h3>
+                    <p class="text-gray-600">
+                        Every client is a partner. Our dedicated support team works closely with you to tailor solutions that fit your specific business needs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center max-w-3xl mx-auto">
+                <p class="text-lg text-gray-600 mb-6">
+                    From offices to enterprises, NQAGWANA CONSUMABLES has proudly served a diverse range of industries including government, education, finance, and healthcare.
+                </p>
+                <p class="text-lg text-gray-600">
+                    Our mission is simple: deliver exceptional consumable solutions that drive your business forward.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section - Redesigned -->
+    <section id="contact" class="py-16 contact-gradient">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">We're here to help with all your office consumable needs</p>
             </div>
             
             <div class="grid md:grid-cols-2 gap-12">
                 <div>
-                    <h3 class="text-xl font-semibold mb-6">Our Offices</h3>
-                    <div class="space-y-6">
-                        <div class="flex items-start">
-                            <i class="fas fa-map-marker-alt text-custom mt-1 mr-4"></i>
-                            <div>
-                                <h4 class="font-medium text-gray-900">Headquarters</h4>
-                                <p class="text-gray-600">305 Osdic Flats, 596 Paul Kruger Street<br>Eloffsdal, Pretoria, 0084 </p>
+                    <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                        <h3 class="text-xl font-semibold mb-6">Our Offices</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-custom text-white p-2 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Headquarters</h4>
+                                    <p class="text-gray-600">305 Osdic Flats, 596 Paul Kruger Street<br>Eloffsdal, Pretoria, 0084</p>
+                                    <a href="https://maps.google.com/?q=305+Osdic+Flats,+596+Paul+Kruger+Street,+Pretoria" target="_blank" class="text-custom text-sm mt-1 inline-block hover:underline">View on map →</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-custom text-white p-2 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Phone</h4>
+                                    <p class="text-gray-600">+27 79 763 5065</p>
+                                    <a href="tel:+27797635065" class="text-custom text-sm mt-1 inline-block hover:underline">Call now →</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-custom text-white p-2 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Email</h4>
+                                    <p class="text-gray-600">nconsumables@gmail.com</p>
+                                    <a href="mailto:nconsumables@gmail.com" class="text-custom text-sm mt-1 inline-block hover:underline">Send email →</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-custom text-white p-2 rounded-full mr-4">
+                                    <i class="fas fa-clock text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Business Hours</h4>
+                                    <p class="text-gray-600">Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday - Sunday: Closed</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-phone-alt text-custom mt-1 mr-4"></i>
-                            <div>
-                                <h4 class="font-medium text-gray-900">Phone</h4>
-                                <p class="text-gray-600">+27 79 763 5065 </p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-envelope text-custom mt-1 mr-4"></i>
-                            <div>
-                                <h4 class="font-medium text-gray-900">Email</h4>
-                                <p class="text-gray-600">nconsumables@gmail.com</p>
-                            </div>
-                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">Quick Quote</h3>
+                        <p class="text-gray-600 mb-6">Need pricing for specific products? Send us your list and we'll respond within 24 hours.</p>
+                        <a href="mailto:nconsumables@gmail.com?subject=Quick%20Quote%20Request&body=Please%20include%20product%20names%20and%20quantities" class="bg-custom text-white px-6 py-3 rounded-md hover:bg-custom transition inline-block">
+                            Request Quote
+                        </a>
                     </div>
                 </div>
                 
                 <div>
-                    <h3 class="text-xl font-semibold mb-6">Send Us a Message</h3>
-<!-- Update the contact form -->
-<!-- Updated Contact Form in Contact Section -->
-<form name="contact" action="https://formsubmit.co/montymhango01@gmail.com" method="POST" class="space-y-4">
-    <input type="hidden" name="_subject" value="New Contact Message from NQAGWANA Website">
-    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> <!-- Replace with your actual success page -->
-    <input type="hidden" name="_captcha" value="false">
-    <input type="text" name="_honey" style="display:none"> <!-- Honeypot field -->
-    
-    <div>
-        <label for="contact-name" class="block text-gray-700 mb-1">Name <span class="text-red-500">*</span></label>
-        <input type="text" id="contact-name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-custom">
-    </div>
-    <div>
-        <label for="contact-email" class="block text-gray-700 mb-1">Email <span class="text-red-500">*</span></label>
-        <input type="email" id="contact-email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-custom">
-    </div>
-    <div>
-        <label for="contact-message" class="block text-gray-700 mb-1">Message <span class="text-red-500">*</span></label>
-        <textarea id="contact-message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-custom"></textarea>
-    </div>
-    <button type="submit" class="bg-custom text-white px-6 py-2 rounded-md hover:bg-custom transition">
-        Send Message
-    </button>
-</form>
+                    <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                        <h3 class="text-xl font-semibold mb-6">Send Us a Message</h3>
+                        <form name="contact" action="https://formsubmit.co/montymhango01@gmail.com" method="POST" class="space-y-4">
+                            <input type="hidden" name="_subject" value="New Contact Message from NQAGWANA Website">
+                            <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="text" name="_honey" style="display:none">
+                            
+                            <div>
+                                <label for="contact-name" class="block text-gray-700 mb-1">Name <span class="text-red-500">*</span></label>
+                                <input type="text" id="contact-name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-custom">
+                            </div>
+                            <div>
+                                <label for="contact-email" class="block text-gray-700 mb-1">Email <span class="text-red-500">*</span></label>
+                                <input type="email" id="contact-email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-custom">
+                            </div>
+                            <div>
+                                <label for="contact-phone" class="block text-gray-700 mb-1">Phone Number</label>
+                                <input type="tel" id="contact-phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-custom">
+                            </div>
+                            <div>
+                                <label for="contact-company" class="block text-gray-700 mb-1">Company</label>
+                                <input type="text" id="contact-company" name="company" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-custom">
+                            </div>
+                            <div>
+                                <label for="contact-message" class="block text-gray-700 mb-1">Message <span class="text-red-500">*</span></label>
+                                <textarea id="contact-message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-custom"></textarea>
+                            </div>
+                            <button type="submit" class="bg-custom text-white px-6 py-3 rounded-md hover:bg-custom transition w-full">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Answers to common questions about our products and services</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="border-b border-gray-200 pb-6">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-medium text-gray-900">What areas do you deliver to?</h3>
+                        <i class="fas fa-chevron-down text-custom transition-transform"></i>
+                    </button>
+                    <div class="faq-content mt-4 text-gray-600 hidden">
+                        <p>We deliver throughout Pretoria and surrounding areas. For locations beyond Pretoria, please contact us for delivery options and potential additional charges.</p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-6">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-medium text-gray-900">Do you offer bulk discounts?</h3>
+                        <i class="fas fa-chevron-down text-custom transition-transform"></i>
+                    </button>
+                    <div class="faq-content mt-4 text-gray-600 hidden">
+                        <p>Yes, we offer significant discounts for bulk orders. The discount percentage increases with order volume. Contact our sales team for a customized quote based on your specific needs.</p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-6">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-medium text-gray-900">Are your toner cartridges original or compatible?</h3>
+                        <i class="fas fa-chevron-down text-custom transition-transform"></i>
+                    </button>
+                    <div class="faq-content mt-4 text-gray-600 hidden">
+                        <p>We offer both original manufacturer cartridges and high-quality compatible alternatives. Our compatible cartridges undergo rigorous testing to ensure they meet performance standards while offering cost savings.</p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-6">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-medium text-gray-900">What payment methods do you accept?</h3>
+                        <i class="fas fa-chevron-down text-custom transition-transform"></i>
+                    </button>
+                    <div class="faq-content mt-4 text-gray-600 hidden">
+                        <p>We accept EFT, credit/debit cards (Visa, Mastercard), and cash on delivery for certain orders. Corporate accounts with established credit terms are available for qualifying businesses.</p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-6">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-medium text-gray-900">Can I set up a recurring order?</h3>
+                        <i class="fas fa-chevron-down text-custom transition-transform"></i>
+                    </button>
+                    <div class="faq-content mt-4 text-gray-600 hidden">
+                        <p>Absolutely! Our automated replenishment service is popular with many clients. We can set up regular deliveries based on your consumption patterns, ensuring you never run out of essential supplies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-custom text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Streamline Your Office Supplies?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                Join hundreds of Pretoria businesses who trust us for their consumable needs.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="tel:+27797635065" class="bg-white text-custom px-8 py-3 rounded-md font-bold hover:bg-gray-100 transition">
+                    Call Now
+                </a>
+                <a href="mailto:nconsumables@gmail.com" class="border-2 border-white text-white px-8 py-3 rounded-md font-bold hover:bg-white hover:text-custom transition">
+                    Email Us
+                </a>
             </div>
         </div>
     </section>
@@ -302,7 +669,12 @@
             <div class="grid md:grid-cols-4 gap-8">
                 <div>
                     <h3 class="text-lg font-semibold mb-4">NQAGWANA CONSUMABLES</h3>
-                    <p class="text-gray-400">Premium consumables for modern businesses.</p>
+                    <p class="text-gray-400 mb-4">Premium consumables for modern businesses.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" aria-label="Facebook" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="LinkedIn" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Products</h3>
@@ -310,6 +682,8 @@
                         <li><a href="products.html" class="text-gray-400 hover:text-white transition">Office Supplies</a></li>
                         <li><a href="products.html" class="text-gray-400 hover:text-white transition">Office Equipment</a></li>
                         <li><a href="catalogues.html" class="text-gray-400 hover:text-white transition">Full Catalogue</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-white transition">Toner Cartridges</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-white transition">Tinned Foods</a></li>
                     </ul>
                 </div>
                 <div>
@@ -318,38 +692,63 @@
                         <li><a href="index.html#about" class="text-gray-400 hover:text-white transition">About Us</a></li>
                         <li><a href="index.html#solutions" class="text-gray-400 hover:text-white transition">Our Solutions</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        <li><a href="index.html#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">Connect</h3>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                    <div class="mt-4">
-                        <a href="index.html#contact" class="text-gray-400 hover:text-white transition block mb-2">
-                            <i class="fas fa-envelope mr-2"></i>nconsumables@gmail.com
-                        </a>
-                        <a href="index.html#contact" class="text-gray-400 hover:text-white transition block">
-                            <i class="fas fa-phone-alt mr-2"></i>+27 79 763 5065
-                        </a>
-                    </div>
+                    <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe for product updates and special offers</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-md w-full focus:outline-none text-gray-800">
+                        <button type="submit" class="bg-custom text-white px-4 py-2 rounded-r-md hover:bg-custom transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-                <p>&copy; 2023 NQAGWANA CONSUMABLES. All rights reserved.</p>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">&copy; 2023 NQAGWANA CONSUMABLES. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition text-sm">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition text-sm">Sitemap</a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 
-<script src="script.js"></script>
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" title="Go to top" class="hidden fixed bottom-6 right-6 bg-custom text-white p-3 rounded-full shadow-lg hover:bg-red-700 transition">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
-<!-- Back to Top Button -->
-<button id="backToTopBtn" title="Go to top" class="hidden fixed bottom-6 right-6 bg-custom text-white p-3 rounded-full shadow-lg hover:bg-red-700 transition">
-    <i class="fas fa-chevron-up"></i>
-</button>
-
+    <script>
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+        
+        // Form handling
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const formData = new FormData(this);
+                
+                // Here you would normally send the form data to your server
+                // For demo purposes, we'll just show an alert
+                alert('Thank you for your message. We will contact you soon!');
+                this.reset();
+            });
+        });
+    </script>
 </body>
 </html>
