@@ -18,9 +18,21 @@
         .focus\:ring-custom:focus { --tw-ring-color: #C72C41; }
         .active-filter { background-color: #C72C41; color: white; }
         .catalogue-hero {
-            background-image: url('images/catalogue-banner.jpg');
-            background-size: cover;
-            background-position: center;
+            position: relative;
+            min-height: 400px; /* Adjust height as needed */
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .catalogue-hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
         }
         .product-card {
             transition: all 0.3s ease;
@@ -77,14 +89,22 @@
         </div>
     </nav>
 
-    <!-- Catalogue Hero Section -->
-    <header class="catalogue-hero text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center bg-black bg-opacity-50">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">Our Complete Product Catalogue</h1>
-            <p class="text-xl max-w-3xl mx-auto">Browse our full range of high-quality office consumables and equipment</p>
-        </div>
-    </header>
-
+<!-- Catalogue Hero Section -->
+<header class="catalogue-hero text-white relative">
+    <!-- Background image with overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-50 z-0">
+        <img src="images/pexels-cottonbro-6648412.jpg" 
+             alt="Office supplies background" 
+             class="w-full h-full object-cover"
+             loading="lazy">
+    </div>
+    
+    <!-- Content container -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center relative z-10">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Our Complete Product Catalogue</h1>
+        <p class="text-xl max-w-3xl mx-auto">Browse our full range of high-quality office consumables and equipment</p>
+    </div>
+</header>
     <!-- Main Catalogue Section -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <!-- Search Box -->
@@ -146,7 +166,7 @@
 
             <!-- Product 5 -->
             <div class="product-card bg-white rounded-lg shadow-md overflow-hidden" data-category="office-supplies" data-name="A5 Notebooks">
-                <img src=" " alt="A5 Notebooks" class="w-full product-image">
+                <img src="images/pexels-pixabay-159497.jpg" alt="A5 Notebooks" class="w-full product-image">
                 <div class="p-6">
                     <h3 class="text-xl font-semibold mb-2">A5 Notebooks (Pack of 5)</h3>
                     <p class="text-gray-600 mb-4">80-page lined notebooks for office use</p>
@@ -156,7 +176,7 @@
 
             <!-- Product 6 -->
             <div class="product-card bg-white rounded-lg shadow-md overflow-hidden" data-category="office-equipment" data-name="HP LaserJet Pro MFP">
-                <img src=" " alt="HP LaserJet Pro MFP" class="w-full product-image">
+                <img src="images/HP LaserJet Pro MFP.png" alt="HP LaserJet Pro MFP" class="w-full product-image">
                 <div class="p-6">
                     <h3 class="text-xl font-semibold mb-2">HP LaserJet Pro MFP</h3>
                     <p class="text-gray-600 mb-4">All-in-one printer, scanner, copier</p>
@@ -166,7 +186,7 @@
 
             <!-- Product 7 -->
             <div class="product-card bg-white rounded-lg shadow-md overflow-hidden" data-category="office-supplies" data-name="Ballpoint Pens">
-                <img src=" " alt="Ballpoint Pens" class="w-full product-image">
+                <img src="images/Ballpoint Pens.jpg" alt="Ballpoint Pens" class="w-full product-image">
                 <div class="p-6">
                     <h3 class="text-xl font-semibold mb-2">Ballpoint Pens (Box of 50)</h3>
                     <p class="text-gray-600 mb-4">Black ink, medium point</p>
@@ -176,7 +196,7 @@
 
             <!-- Product 8 -->
             <div class="product-card bg-white rounded-lg shadow-md overflow-hidden" data-category="office-equipment" data-name="Heavy-duty Staple Gun">
-                <img src=" " alt="Staple Gun" class="w-full product-image">
+                <img src="images/pexels-tima-miroshnichenko-6790814.jpg" alt="Staple Gun" class="w-full product-image">
                 <div class="p-6">
                     <h3 class="text-xl font-semibold mb-2">Heavy-duty Staple Gun</h3>
                     <p class="text-gray-600 mb-4">Includes 1000 staples</p>
