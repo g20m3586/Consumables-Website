@@ -484,111 +484,82 @@
         </div>
     </section>
 
-    <!-- Contact Section - Redesigned -->
-    <section id="contact" class="py-16 contact-gradient">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Get In Touch</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">We're here to help with all your office consumable needs</p>
+<!-- Contact Section - With Map -->
+<section id="contact" class="py-16 contact-gradient">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">We're here to help with all your office consumable needs</p>
+      </div>
+  
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Left Column: Contact Details -->
+        <div class="bg-white p-8 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-6">Our Offices</h3>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="bg-custom text-white p-2 rounded-full mr-4">
+                <i class="fas fa-map-marker-alt text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-900">Headquarters</h4>
+                <p class="text-gray-600">305 Osdic Flats, 596 Paul Kruger Street<br>Eloffsdal, Pretoria, 0084</p>
+                <a href="https://maps.google.com/?q=305+Osdic+Flats,+596+Paul+Kruger+Street,+Pretoria" target="_blank" class="text-custom text-sm mt-1 inline-block hover:underline">View on map →</a>
+              </div>
             </div>
-            
-            <div class="grid md:grid-cols-2 gap-12">
-                <div>
-                    <div class="bg-white p-8 rounded-lg shadow-md mb-8">
-                        <h3 class="text-xl font-semibold mb-6">Our Offices</h3>
-                        <div class="space-y-6">
-                            <div class="flex items-start">
-                                <div class="bg-custom text-white p-2 rounded-full mr-4">
-                                    <i class="fas fa-map-marker-alt text-sm"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-medium text-gray-900">Headquarters</h4>
-                                    <p class="text-gray-600">305 Osdic Flats, 596 Paul Kruger Street<br>Eloffsdal, Pretoria, 0084</p>
-                                    <a href="https://maps.google.com/?q=305+Osdic+Flats,+596+Paul+Kruger+Street,+Pretoria" target="_blank" class="text-custom text-sm mt-1 inline-block hover:underline">View on map →</a>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="bg-custom text-white p-2 rounded-full mr-4">
-                                    <i class="fas fa-phone-alt text-sm"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-medium text-gray-900">Phone</h4>
-                                    <p class="text-gray-600">+27 79 763 5065</p>
-                                    <a href="tel:+27797635065" class="text-custom text-sm mt-1 inline-block hover:underline">Call now →</a>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="bg-custom text-white p-2 rounded-full mr-4">
-                                    <i class="fas fa-envelope text-sm"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-medium text-gray-900">Email</h4>
-                                    <p class="text-gray-600">nconsumables@gmail.com</p>
-                                    <a href="mailto:nconsumables@gmail.com" class="text-custom text-sm mt-1 inline-block hover:underline">Send email →</a>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="bg-custom text-white p-2 rounded-full mr-4">
-                                    <i class="fas fa-clock text-sm"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-medium text-gray-900">Business Hours</h4>
-                                    <p class="text-gray-600">Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday - Sunday: Closed</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-white p-8 rounded-lg shadow-md">
-                        <h3 class="text-xl font-semibold mb-4">Quick Quote</h3>
-                        <p class="text-gray-600 mb-6">Need pricing for specific products? Send us your list and we'll respond within 24 hours.</p>
-                        <a href="mailto:nconsumables@gmail.com?subject=Quick%20Quote%20Request&body=Please%20include%20product%20names%20and%20quantities" class="bg-custom text-white px-6 py-3 rounded-md hover:bg-custom transition inline-block">
-                            Request Quote
-                        </a>
-                    </div>
-                </div>
-                
-                <div>
-                    <div class="bg-white p-8 rounded-lg shadow-md h-full">
-                        <h3 class="text-xl font-semibold mb-6">Send Us a Message</h3>
-                        <form name="contact" method="POST" data-netlify="true" class="space-y-4">
-                            <input type="hidden" name="form-name" value="contact">
-                          
-                            <div>
-                              <label for="contact-name" class="block text-gray-700 mb-1">Name <span class="text-red-500">*</span></label>
-                              <input type="text" id="contact-name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-custom">
-                            </div>
-                          
-                            <div>
-                              <label for="contact-email" class="block text-gray-700 mb-1">Email <span class="text-red-500">*</span></label>
-                              <input type="email" id="contact-email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-custom">
-                            </div>
-                          
-                            <div>
-                              <label for="contact-phone" class="block text-gray-700 mb-1">Phone Number</label>
-                              <input type="tel" id="contact-phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-custom">
-                            </div>
-                          
-                            <div>
-                              <label for="contact-company" class="block text-gray-700 mb-1">Company</label>
-                              <input type="text" id="contact-company" name="company" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-custom">
-                            </div>
-                          
-                            <div>
-                              <label for="contact-message" class="block text-gray-700 mb-1">Message <span class="text-red-500">*</span></label>
-                              <textarea id="contact-message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-custom"></textarea>
-                            </div>
-                          
-                            <button type="submit" class="bg-custom text-white px-6 py-3 rounded-md hover:bg-custom transition w-full">
-                              Send Message
-                            </button>
-                          </form>
-                          
-                    </div>
-                </div>
+            <div class="flex items-start">
+              <div class="bg-custom text-white p-2 rounded-full mr-4">
+                <i class="fas fa-phone-alt text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-900">Phone</h4>
+                <p class="text-gray-600">+27 79 763 5065</p>
+                <a href="tel:+27797635065" class="text-custom text-sm mt-1 inline-block hover:underline">Call now →</a>
+              </div>
             </div>
+            <div class="flex items-start">
+              <div class="bg-custom text-white p-2 rounded-full mr-4">
+                <i class="fas fa-envelope text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-900">Email</h4>
+                <p class="text-gray-600">nconsumables@gmail.com</p>
+                <a href="mailto:nconsumables@gmail.com" class="text-custom text-sm mt-1 inline-block hover:underline">Send email →</a>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-custom text-white p-2 rounded-full mr-4">
+                <i class="fas fa-clock text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-900">Business Hours</h4>
+                <p class="text-gray-600">Mon - Fri: 8:00 AM - 5:00 PM<br>Sat - Sun: Closed</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="mt-10">
+            <h3 class="text-xl font-semibold mb-4">Quick Quote</h3>
+            <p class="text-gray-600 mb-6">Need pricing for specific products? Send us your list and we'll respond within 24 hours.</p>
+            <a href="mailto:nconsumables@gmail.com?subject=Quick%20Quote%20Request&body=Please%20include%20product%20names%20and%20quantities" class="bg-custom text-white px-6 py-3 rounded-md hover:bg-custom transition inline-block">
+              Request Quote
+            </a>
+          </div>
         </div>
-    </section>
+  
+        <!-- Right Column: Google Map -->
+        <div class="rounded-lg overflow-hidden shadow-md">
+          <iframe
+            src="https://www.google.com/maps?q=305+Osdic+Flats,+596+Paul+Kruger+Street,+Pretoria&output=embed"
+            width="100%" height="100%" style="min-height: 600px;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-full border-0">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
 
     <!-- FAQ Section -->
     <section class="py-16 bg-white">
